@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <version>1.1.0</version>
+    <authors>Alexander Kahoun</authors>
+    <owners />
+    <dependencies>
+      <dependency id="Modernizr" version="1.7" />
+      <dependency id="YUICompressor.NET" version="1.7.0.0" />
+      <dependency id="YUICompressor.NET-MsBuild-Task" version="1.7.0.0" />
+      <dependency id="jQuery" version="1.4.4" />
+    </dependencies>
+    <id>MVC3.HTML5Boilerplate.YUI</id>
+    <title>MVC3 HTML5 Boilerplate with YUICompressor</title>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>HTML5 Boilerplate 3.0 for the MVC3 Razor View Engine.  Includes YUI Compressor Dependency and build script.</description>
+    <summary>Add this command to the Properties&gt;Build Events&gt;Post-Build Event for your project:
+
+$(MSBuildBinPath)\msbuild.exe "$(ProjectDir)MSBuild\CompressionSettings.xml"</summary>
+    <language>en-US</language>
+    <tags>HTML, HTML5, HTML5Boilerplate, Boilerplate, MVC3, Razor</tags>
+  </metadata>
+  <files>
+    <file src="content\Content\images\apple-touch-icon-114x114-precomposed.png" target="content\Content\images\apple-touch-icon-114x114-precomposed.png" />
+    <file src="content\Content\images\apple-touch-icon-57x57-precomposed.png" target="content\Content\images\apple-touch-icon-57x57-precomposed.png" />
+    <file src="content\Content\images\apple-touch-icon-72x72-precomposed.png" target="content\Content\images\apple-touch-icon-72x72-precomposed.png" />
+    <file src="content\Content\images\apple-touch-icon-precomposed.png" target="content\Content\images\apple-touch-icon-precomposed.png" />
+    <file src="content\Content\images\apple-touch-icon.png" target="content\Content\images\apple-touch-icon.png" />
+    <file src="content\Content\images\favicon.ico" target="content\Content\images\favicon.ico" />
+    <file src="content\Content\style.css" target="content\Content\style.css" />
+    <file src="content\Controllers\ErrorController.cs.pp" target="content\Controllers\ErrorController.cs.pp" />
+    <file src="content\js\script.js" target="content\js\script.js" />
+    <file src="content\js\script.min.js" target="content\js\script.min.js" />
+    <file src="content\MSBuild\CompressionSettings.xml" target="content\MSBuild\CompressionSettings.xml" />
+    <file src="content\MSBuild\EcmaScript.NET.modified.dll" target="content\MSBuild\EcmaScript.NET.modified.dll" />
+    <file src="content\MSBuild\Yahoo.Yui.Compressor.dll" target="content\MSBuild\Yahoo.Yui.Compressor.dll" />
+    <file src="content\MSBuild\Yahoo.Yui.Compressor.MsBuildTask.dll" target="content\MSBuild\Yahoo.Yui.Compressor.MsBuildTask.dll" />
+    <file src="content\Scripts\plugins.js" target="content\Scripts\plugins.js" />
+    <file src="content\Scripts\plugins.min.js" target="content\Scripts\plugins.min.js" />
+    <file src="content\Views\Shared\NotFoundError.cshtml" target="content\Views\Shared\NotFoundError.cshtml" />
+    <file src="content\Views\Shared\_Html5BoilerplateLayout.cshtml" target="content\Views\Shared\_Html5BoilerplateLayout.cshtml" />
+    <file src="content\Web.config.transform" target="content\Web.config.transform" />
+  </files>
+</package>

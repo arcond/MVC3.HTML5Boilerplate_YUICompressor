@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/MsBuild/2003">
+	<UsingTask
+		TaskName="CompressorTask"
+		AssemblyFile="Yahoo.Yui.Compressor.MsBuildTask.dll" />
+	<PropertyGroup>
+		<CssOutputFile Condition=" '$(CssOutputFile)'=='' ">..\Content\style.min.css</CssOutputFile>
+		<JavaScriptOutputFile Condition=" '$(JavaScriptOutputFile)'=='' ">..\js\script.min.js</JavaScriptOutputFile>
+	</PropertyGroup>
+
+	<!-- CSS Files compressed to Content/style.min.css -->
+	<Target Name="CssCompression">
+		<ItemGroup>
+			<CssFiles Remove="@(CssFiles)" />
+			<CssFiles Include="..\Content\style.css"/>
+		</ItemGroup>
+		<CompressorTask
+			CssFiles="@(CssFiles)"
+			DeleteCssFiles="False"
+			CssOutputFile="$(CssOutputFile)"
+			CssCompressionType="YuiStockCompression"
+			JavaScriptFiles="@(JavaScriptFiles)"
+			ObfuscateJavaScript="True"
+			PreserveAllSemicolons="False"
+			DisableOptimizations="False"
+			EncodingType="UTF8"
+			DeleteJavaScriptFiles="False"
+			LineBreakPosition="-1"
+			JavaScriptOutputFile="$(JavaScriptOutputFile)"
+			LoggingType="HardcoreBringItOn"
+			ThreadCulture="en-us"
+			IsEvalIgnored="True"
+			PreserveCssComments="False" />
+
+		<!-- JS Plugin Files compressed to Scripts/plugins.min.js -->
+		<ItemGroup>
+			<CssFiles Remove="@(CssFiles)" />
+			<JavaScriptFiles Remove="@(JavaScriptFiles)" />
+			<JavaScriptFiles Include="..\Scripts\plugins.js"/>
+		</ItemGroup>
+		<CompressorTask
+			CssFiles="@(CssFiles)"
+			DeleteCssFiles="False"
+			CssOutputFile="$(CssOutputFile)"
+			CssCompressionType="YuiStockCompression"
+			JavaScriptFiles="@(JavaScriptFiles)"
+			ObfuscateJavaScript="True"
+			PreserveAllSemicolons="False"
+			DisableOptimizations="False"
+			EncodingType="UTF8"
+			DeleteJavaScriptFiles="False"
+			LineBreakPosition="-1"
+			JavaScriptOutputFile="..\Scripts\plugins.min.js"
+			LoggingType="HardcoreBringItOn"
+			ThreadCulture="en-us"
+			IsEvalIgnored="True"
+			PreserveCssComments="False" />
+
+		<!-- JS site-specific Files compressed to js/script.min.js -->
+		<ItemGroup>
+			<CssFiles Remove="@(CssFiles)" />
+			<JavaScriptFiles Remove="@(JavaScriptFiles)" />
+			<JavaScriptFiles Include="..\Scripts\script.js"/>
+		</ItemGroup>
+		<CompressorTask
+			CssFiles="@(CssFiles)"
+			DeleteCssFiles="False"
+			CssOutputFile="$(CssOutputFile)"
+			CssCompressionType="YuiStockCompression"
+			JavaScriptFiles="@(JavaScriptFiles)"
+			ObfuscateJavaScript="True"
+			PreserveAllSemicolons="False"
+			DisableOptimizations="False"
+			EncodingType="UTF8"
+			DeleteJavaScriptFiles="False"
+			LineBreakPosition="-1"
+			JavaScriptOutputFile="$(JavaScriptOutputFile)"
+			LoggingType="HardcoreBringItOn"
+			ThreadCulture="en-us"
+			IsEvalIgnored="True"
+			PreserveCssComments="False" />
+	</Target>
+</Project>
