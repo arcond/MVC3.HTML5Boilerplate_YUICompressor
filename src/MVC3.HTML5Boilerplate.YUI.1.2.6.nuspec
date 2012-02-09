@@ -1,9 +1,10 @@
 <?xml version="1.0"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
-    <version>1.1.0</version>
+    <version>1.2.6</version>
     <authors>Alexander Kahoun</authors>
-    <owners />
+    <owners>arcond</owners>
+    <projectUrl>https://github.com/arcond/MVC3.HTML5Boilerplate_YUICompressor</projectUrl>
     <dependencies>
       <dependency id="Modernizr" version="1.7" />
       <dependency id="YUICompressor.NET" version="1.7.0.0" />
@@ -13,10 +14,13 @@
     <id>MVC3.HTML5Boilerplate.YUI</id>
     <title>MVC3 HTML5 Boilerplate with YUICompressor</title>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>HTML5 Boilerplate 3.0 for the MVC3 Razor View Engine.  Includes YUI Compressor Dependency and build script.</description>
-    <summary>Add this command to the Properties&gt;Build Events&gt;Post-Build Event for your project:
+    <description>HTML5 Boilerplate 3.0 for the MVC3 Razor View Engine.  Includes YUI Compressor Dependency and build script.
 
-$(MSBuildBinPath)\msbuild.exe "$(ProjectDir)MSBuild\CompressionSettings.xml"</summary>
+HTML5Boilerplare site: http://html5boilerplate.com/
+
+YUICompressor.NET site: http://yuicompressor.codeplex.com/</description>
+    <summary />
+    <releaseNotes>Added automation of adding the post-build event</releaseNotes>
     <language>en-US</language>
     <tags>HTML, HTML5, HTML5Boilerplate, Boilerplate, MVC3, Razor</tags>
   </metadata>
@@ -40,5 +44,7 @@ $(MSBuildBinPath)\msbuild.exe "$(ProjectDir)MSBuild\CompressionSettings.xml"</su
     <file src="content\Views\Shared\NotFoundError.cshtml" target="content\Views\Shared\NotFoundError.cshtml" />
     <file src="content\Views\Shared\_Html5BoilerplateLayout.cshtml" target="content\Views\Shared\_Html5BoilerplateLayout.cshtml" />
     <file src="content\Web.config.transform" target="content\Web.config.transform" />
+    <file src="..\..\..\..\AppData\Local\Temp\2784289f-fb8c-4b93-bb15-d6ceb4b79d6d\install.ps1" target="tools\install.ps1" />
+    <file src="..\..\..\..\AppData\Local\Temp\b3cd3080-1137-4de3-92e6-92ed1fc70494\uninstall.ps1" target="tools\uninstall.ps1" />
   </files>
 </package>
