@@ -1,0 +1,9 @@
+This is the source code and source package for the MVC3.HTML5Boilerplate.YUI NuGet package.
+I'm going to do my best to keep it up to date especially following the HTML5Boilerplate releases.
+
+Remember when using the NuGet package:
+Add this command to the Properties>Build Events>Post-Build Event for your project:
+
+$(MSBuildBinPath)\msbuild.exe "$(ProjectDir)MSBuild\CompressionSettings.xml"
+
+Please feel free to fork, modify, contribute.  Happy coding!
