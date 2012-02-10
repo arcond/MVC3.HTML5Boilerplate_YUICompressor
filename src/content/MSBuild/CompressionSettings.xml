@@ -60,7 +60,7 @@
 		<ItemGroup>
 			<CssFiles Remove="@(CssFiles)" />
 			<JavaScriptFiles Remove="@(JavaScriptFiles)" />
-			<JavaScriptFiles Include="..\Scripts\script.js"/>
+			<JavaScriptFiles Include="..\js\script.js"/>
 		</ItemGroup>
 		<CompressorTask
 			CssFiles="@(CssFiles)"
