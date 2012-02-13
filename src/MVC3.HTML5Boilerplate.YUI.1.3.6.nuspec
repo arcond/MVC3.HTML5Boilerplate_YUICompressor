@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
-    <version>1.2.7</version>
+    <version>1.3.6</version>
     <authors>Alexander Kahoun</authors>
     <owners>arcond</owners>
     <projectUrl>https://github.com/arcond/MVC3.HTML5Boilerplate_YUICompressor</projectUrl>
@@ -20,7 +20,7 @@ HTML5Boilerplare site: http://html5boilerplate.com/
 
 YUICompressor.NET site: http://yuicompressor.codeplex.com/</description>
     <summary />
-    <releaseNotes>Fixed path bug in CompressionSettings.xml</releaseNotes>
+    <releaseNotes>Added style.min.css and updated the path</releaseNotes>
     <language>en-US</language>
     <tags>HTML, HTML5, HTML5Boilerplate, Boilerplate, MVC3, Razor</tags>
   </metadata>
@@ -32,17 +32,18 @@ YUICompressor.NET site: http://yuicompressor.codeplex.com/</description>
     <file src="content\Content\images\apple-touch-icon.png" target="content\Content\images\apple-touch-icon.png" />
     <file src="content\Content\images\favicon.ico" target="content\Content\images\favicon.ico" />
     <file src="content\Content\style.css" target="content\Content\style.css" />
+    <file src="..\..\..\Documents\Visual Studio 2010\Projects\MvcApplication2\MvcApplication2\Content\style.min.css" target="content\Content\style.min.css" />
     <file src="content\Controllers\ErrorController.cs.pp" target="content\Controllers\ErrorController.cs.pp" />
     <file src="content\js\script.js" target="content\js\script.js" />
     <file src="content\js\script.min.js" target="content\js\script.min.js" />
-    <file src="..\..\..\..\AppData\Local\Temp\43a465d5-fc3a-422e-abdd-2efc3a2f283e\CompressionSettings.xml" target="content\MSBuild\CompressionSettings.xml" />
+    <file src="content\MSBuild\CompressionSettings.xml" target="content\MSBuild\CompressionSettings.xml" />
     <file src="content\MSBuild\EcmaScript.NET.modified.dll" target="content\MSBuild\EcmaScript.NET.modified.dll" />
     <file src="content\MSBuild\Yahoo.Yui.Compressor.dll" target="content\MSBuild\Yahoo.Yui.Compressor.dll" />
     <file src="content\MSBuild\Yahoo.Yui.Compressor.MsBuildTask.dll" target="content\MSBuild\Yahoo.Yui.Compressor.MsBuildTask.dll" />
     <file src="content\Scripts\plugins.js" target="content\Scripts\plugins.js" />
     <file src="content\Scripts\plugins.min.js" target="content\Scripts\plugins.min.js" />
     <file src="content\Views\Shared\NotFoundError.cshtml" target="content\Views\Shared\NotFoundError.cshtml" />
-    <file src="content\Views\Shared\_Html5BoilerplateLayout.cshtml" target="content\Views\Shared\_Html5BoilerplateLayout.cshtml" />
+    <file src="..\..\..\AppData\Local\Temp\ce69ec01-6b80-496a-938f-4112e1ff0bc6\_Html5BoilerplateLayout.cshtml" target="content\Views\Shared\_Html5BoilerplateLayout.cshtml" />
     <file src="content\Web.config.transform" target="content\Web.config.transform" />
     <file src="tools\install.ps1" target="tools\install.ps1" />
     <file src="tools\uninstall.ps1" target="tools\uninstall.ps1" />
